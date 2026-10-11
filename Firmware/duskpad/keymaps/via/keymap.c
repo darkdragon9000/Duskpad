@@ -36,10 +36,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_NO,   KC_NO,   KC_NO
     ),
     [3] = LAYOUT(
-        DP_MODE, KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO
+        DP_MODE, RM_TOGG, RM_PREV, RM_NEXT,
+        RM_HUED, RM_HUEU, RM_VALD, RM_VALU,
+        RM_SATD, RM_SATU, RM_SPDD, RM_SPDU,
+        KC_NO,   DB_TOGG, EE_CLR,  QK_BOOT
     )
 };
 

@@ -36,10 +36,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_NO,   KC_NO,   KC_NO
     ),
     [3] = LAYOUT(
-        DP_MODE, RGB_TOG, RGB_RMOD, RGB_MOD,
-        RGB_HUD, RGB_HUI, RGB_VAD,  RGB_VAI,
-        RGB_SAD, RGB_SAI, RGB_SPD,  RGB_SPI,
-        KC_NO,   KC_NO,   EE_CLR,   QK_BOOT
+        DP_MODE, RM_TOGG, RM_PREV, RM_NEXT,
+        RM_HUED, RM_HUEU, RM_VALD, RM_VALU,
+        RM_SATD, RM_SATU, RM_SPDD, RM_SPDU,
+        KC_NO,   DB_TOGG, EE_CLR,  QK_BOOT
     )
 };
 
@@ -92,7 +92,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                         tap_code(KC_NO);
                         break;
                         case 3:
-                        tap_code(DB_TOGG);
+                        tap_code(KC_NO);
                         break;
     }
                 }
